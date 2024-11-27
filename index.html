@@ -4,12 +4,22 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + Vue + TS</title>
+    <title>Vite + Vue + React + TS</title>
   </head>
   <body>
+    <!-- Button container -->
+    <div id="menu">
+      <button id="load-vue">Load Vue App</button>
+      <button id="load-react">Load React App</button>
+    </div>
+
+    <!-- Go Back button -->
+    <button id="go-back" style="display: none;">Go Back</button>
+
+    <!-- Placeholder for Vue and React apps -->
     <div id="app"></div>
     <div id="root"></div>
-    <script type="module" src="/src/main.ts"></script>
-    <script type="module" src="/src/main.tsx"></script>
+
+    <script type="module" src="/src/loader.js"></script>
   </body>
 </html>

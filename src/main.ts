@@ -1,5 +1,5 @@
-import { createApp } from 'vue';
 import './style.css';
 import App from './App.vue';
 
-createApp(App).mount('#app');
+// Export the App component for dynamic mounting in loader.js
+export default App;
