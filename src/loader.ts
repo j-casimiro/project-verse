@@ -1,16 +1,16 @@
 // Reference the buttons and containers
-const vueButton = document.getElementById('load-vue');
-const reactButton = document.getElementById('load-react');
-const goBackButton = document.getElementById('go-back');
-const menu = document.getElementById('menu');
-const appContainer = document.getElementById('app');
-const rootContainer = document.getElementById('root');
+const vueButton = document.getElementById('load-vue') as HTMLButtonElement;
+const reactButton = document.getElementById('load-react') as HTMLButtonElement;
+const goBackButton = document.getElementById('go-back') as HTMLButtonElement;
+const menu = document.getElementById('menu') as HTMLElement;
+const appContainer = document.getElementById('app') as HTMLElement;
+const rootContainer = document.getElementById('root') as HTMLElement;
 
-let vueApp = null; // Reference to the Vue app instance
-let reactRoot = null; // Reference to the React root
+let vueApp: ReturnType<typeof import('vue')['createApp']> | null = null; // Reference to the Vue app instance
+let reactRoot: any | null = null; // Reference to the React root
 
 // Show the menu and hide the app containers
-function showMenu() {
+function showMenu(): void {
   menu.style.display = 'block';
   goBackButton.style.display = 'none';
 
@@ -30,7 +30,7 @@ function showMenu() {
 }
 
 // Hide the menu and show the Go Back button
-function showApp() {
+function showApp(): void {
   menu.style.display = 'none';
   goBackButton.style.display = 'block';
 }
