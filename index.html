@@ -4,13 +4,43 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + Vue + React + TS</title>
+    <title>Project Verse</title>
+    <link rel="stylesheet" href="/src/style.css" />
   </head>
-  <body>
-    <!-- Button container -->
-    <div id="menu">
-      <button id="load-vue">Load Vue App</button>
-      <button id="load-react">Load React App</button>
+  <body class="flex justify-center items-center min-h-screen bg-gray-50">
+    <!-- Main container -->
+    <div class="text-center">
+      <!-- Header -->
+      <h1 class="mb-6 text-3xl font-bold text-gray-800">Project Verse</h1>
+      
+      <!-- Button container -->
+      <div id="menu" class="flex gap-4">
+        <!-- React Button -->
+        <button
+          id="load-react"
+          class="flex gap-2 justify-center items-center px-4 py-2 w-64 text-white bg-black rounded-md transition hover:bg-blue-900 focus:outline-none focus:ring-2 focus:ring-gray-600 focus:ring-offset-2"
+        >
+          <img
+            src="/react.svg"
+            alt="React Logo"
+            class="w-6 h-6"
+          />
+          Load React Projects
+        </button>
+        
+        <!-- Vue Button -->
+        <button
+          id="load-vue"
+          class="flex gap-2 justify-center items-center px-4 py-2 w-64 text-white bg-black rounded-md transition hover:bg-green-900 focus:outline-none focus:ring-2 focus:ring-gray-600 focus:ring-offset-2"
+        >
+          <img
+            src="/vue.svg"
+            alt="Vue Logo"
+            class="w-6 h-6"
+          />
+          Load Vue Projects
+        </button>
+      </div>
     </div>
 
     <script type="module" src="/src/loader.ts"></script>
