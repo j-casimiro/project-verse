@@ -6,27 +6,26 @@ const navigateToHome = () => {
 
 <template>
   <nav
-    class="flex justify-between items-center px-4 py-2 bg-white border-b border-gray-200"
+    class="rounded-md border-b shadow-lg bg-neutral-800 dark:border-neutral-700"
   >
-    <!-- Menu Button on the Left -->
-    <button
-      @click="navigateToHome"
-      class="px-4 py-2 text-sm font-semibold rounded-md text-neutral-700 bg-neutral-200 hover:bg-neutral-300 focus:outline-none focus:ring-2 focus:ring-neutral-500 focus:ring-offset-2"
-    >
-      Menu
-    </button>
+    <div class="p-3 px-7 w-full md:flex md:items-center md:justify-between">
+      <button
+        @click="navigateToHome"
+        class="py-2 text-sm font-semibold text-neutral-300 hover:text-neutral-50"
+      >
+        Menu
+      </button>
 
-    <!-- Title Centered -->
-    <div class="mx-auto text-2xl font-bold text-green-800">Vue</div>
+      <div class="text-2xl font-bold text-center text-green-400">Vue</div>
 
-    <!-- GitHub Link on the Right -->
-    <a
-      href="https://github.com/j-casimiro"
-      target="_blank"
-      rel="noopener noreferrer"
-      class="text-sm font-medium underline transition-colors text-neutral-500 hover:text-black decoration-neutral-500"
-    >
-      @j-casimiro
-    </a>
+      <a
+        href="https://github.com/j-casimiro"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="flex gap-2 items-center text-sm font-medium transition-colors text-neutral-300 sm:mt-0 hover:text-white"
+      >
+        @j-casimiro
+      </a>
+    </div>
   </nav>
 </template>

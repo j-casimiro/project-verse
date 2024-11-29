@@ -27,11 +27,15 @@ const App: React.FC = () => {
 
   return (
     <>
-      <div className="sticky top-0 z-50">
-        <Navbar />
-      </div>
-      <div className="flex flex-col justify-center items-center p-8 min-h-screen bg-neutral-100">
-        <div className="flex flex-wrap gap-6 justify-center">
+      <div className="flex flex-col justify-center items-center bg-neutral-100">
+        <div className="sticky top-0 z-50 p-3 w-full">
+          <Navbar />
+        </div>
+
+        <div
+          className="flex flex-wrap gap-6 justify-center mt-[30px] w-full m-[50px]"
+          style={{ minHeight: 'calc(100vh - 200px)' }}
+        >
           {components.map((item, index) => (
             <Card
               key={index}

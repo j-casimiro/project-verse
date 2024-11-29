@@ -7,42 +7,68 @@
     <title>Project Verse</title>
     <link rel="stylesheet" href="/src/style.css" />
   </head>
-  <body class="flex justify-center items-center min-h-screen bg-gray-50">
+  <body class="flex flex-col min-h-screen bg-neutral-50">
+
     <!-- Main container -->
-    <div class="text-center">
-      <!-- Header -->
-      <h1 class="mb-6 text-3xl font-bold text-black">Project Verse</h1>
-      
-      <!-- Button container -->
-      <div id="menu" class="flex gap-4">
-        <!-- React Button -->
-        <button
-          id="load-react"
-          class="flex gap-2 justify-center items-center px-4 py-2 w-64 text-white bg-black rounded-md transition hover:bg-blue-900 focus:outline-none focus:ring-2 focus:ring-gray-600 focus:ring-offset-2"
-        >
-          <img
-            src="/react.svg"
-            alt="React Logo"
-            class="w-6 h-6"
-          />
-          Load React Projects
-        </button>
+    <div class="flex flex-grow justify-center items-center">
+      <div class="max-w-3xl text-center">
+        <!-- Header -->
+        <h1 class="mb-6 text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-green-600">
+          The Project Verse
+        </h1>
+
+        <!-- Description -->
+        <p class="mb-6 text-xl text-neutral-500">
+          A compilation of my projects in React and Vue.
+        </p>
         
-        <!-- Vue Button -->
-        <button
-          id="load-vue"
-          class="flex gap-2 justify-center items-center px-4 py-2 w-64 text-white bg-black rounded-md transition hover:bg-green-900 focus:outline-none focus:ring-2 focus:ring-gray-600 focus:ring-offset-2"
-        >
-          <img
-            src="/vue.svg"
-            alt="Vue Logo"
-            class="w-6 h-6"
-          />
-          Load Vue Projects
-        </button>
+        <!-- Button container -->
+        <div id="menu" class="flex gap-4 justify-center">
+          <!-- Button 1 -->
+          <button
+            id="load-react"
+            class="flex gap-2 justify-center items-center px-6 py-3 text-white rounded-md transition bg-neutral-800 hover:bg-blue-900 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2"
+          >
+            <img
+              src="/react.svg"
+              alt="React Logo"
+              class="w-6 h-6"
+            />
+            React Projects
+          </button>
+          
+          <!-- Button 2 -->
+          <button
+            id="load-vue"
+            class="flex gap-2 justify-center items-center px-6 py-3 text-white rounded-md transition bg-neutral-800 hover:bg-green-900 focus:outline-none focus:ring-2 focus:ring-green-600 focus:ring-offset-2"
+          >
+            <img
+              src="/vue.svg"
+              alt="Vue Logo"
+              class="w-6 h-6"
+            />
+            Vue Projects
+          </button>
+        </div>
       </div>
     </div>
-
+   
+    <footer class="m-2 rounded-md border-t shadow-lg bg-neutral-800 dark:border-neutral-700">
+      <div class="p-4 mx-auto w-full max-w-screen-xl md:flex md:items-center md:justify-between">
+        <span class="text-sm text-neutral-300 sm:text-center">
+          Made with ❤️ by <a href="https://github.com/j-casimiro" class="hover:underline">@j-casimiro</a>
+        </span>
+        <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-neutral-300 sm:mt-0">
+          <li>
+            <a href="https://jcasimiro.netlify.app/" class="hover:underline me-4 md:me-6">Portfolio</a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/j-casimiro/" class="hover:underline me-4 md:me-6">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    
     <script type="module" src="/src/loader.ts"></script>
   </body>
 </html>
