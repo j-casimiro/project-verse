@@ -5,9 +5,7 @@ const navigateToHome = () => {
 </script>
 
 <template>
-  <nav
-    class="rounded-md border-b shadow-lg bg-neutral-800 dark:border-neutral-700"
-  >
+  <nav class="border-b shadow-lg bg-neutral-800 dark:border-neutral-700">
     <div class="p-3 px-7 w-full md:flex md:items-center md:justify-between">
       <button
         @click="navigateToHome"

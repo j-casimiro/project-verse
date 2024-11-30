@@ -29,7 +29,7 @@ const components = [
 <template>
   <div class="flex flex-col justify-center items-center bg-neutral-100">
     <!-- Navbar with sticky positioning -->
-    <div class="sticky top-0 z-50 p-3 w-full">
+    <div class="sticky top-0 z-50 w-full">
       <Navbar />
     </div>
 

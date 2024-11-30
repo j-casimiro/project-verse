@@ -28,7 +28,7 @@ const App: React.FC = () => {
   return (
     <>
       <div className="flex flex-col justify-center items-center bg-neutral-100">
-        <div className="sticky top-0 z-50 p-3 w-full">
+        <div className="sticky top-0 z-50 w-full">
           <Navbar />
         </div>
 
