@@ -11,7 +11,7 @@ const navigateToHome = () => {
         @click="navigateToHome"
         class="py-2 text-sm font-semibold text-neutral-300 hover:text-neutral-50"
       >
-        Menu
+        MENU
       </button>
 
       <div class="text-2xl font-bold text-center text-green-400">Vue</div>

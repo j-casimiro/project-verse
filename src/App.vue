@@ -3,6 +3,7 @@ import { ref } from 'vue';
 import Navbar from './components/Vue/reusables/NavBar.vue';
 import Card from './components/Vue/reusables/Card.vue';
 import HelloWorld from './components/Vue/HelloWorld.vue';
+import Chat from './components/Vue/Chat.vue';
 
 const isModalOpen = ref(false);
 const modalContent = ref<string | null>(null);
@@ -22,6 +23,11 @@ const components = [
     title: 'Drag and Drop',
     description: 'Drag and Drop',
     component: HelloWorld,
+  },
+  {
+    title: 'Chat UI',
+    description: 'A beautiful chat UI component',
+    component: Chat,
   },
 ];
 </script>
@@ -78,7 +84,9 @@ const components = [
         </button>
 
         <!-- Render the dynamic component here -->
-        <component :is="modalContent" />
+        <div class="flex justify-center items-center">
+          <component :is="modalContent" />
+        </div>
       </div>
     </div>
   </div>
