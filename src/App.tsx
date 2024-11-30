@@ -75,7 +75,9 @@ const App: React.FC = () => {
                 </svg>
               </button>
 
-              {modalContent}
+              <div className="flex justify-center items-center">
+                {modalContent}
+              </div>
             </div>
           </div>
         )}
