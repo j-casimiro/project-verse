@@ -6,7 +6,7 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <nav className="rounded-md border-b shadow-lg bg-neutral-800 dark:border-neutral-700">
+    <nav className="border-b shadow-lg  bg-neutral-800 dark:border-neutral-700">
       <div className="p-3 px-7 w-full md:flex md:items-center md:justify-between">
         <button
           onClick={navigateToHome}

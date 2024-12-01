@@ -5,15 +5,13 @@ const navigateToHome = () => {
 </script>
 
 <template>
-  <nav
-    class="rounded-md border-b shadow-lg bg-neutral-800 dark:border-neutral-700"
-  >
+  <nav class="border-b shadow-lg bg-neutral-800 dark:border-neutral-700">
     <div class="p-3 px-7 w-full md:flex md:items-center md:justify-between">
       <button
         @click="navigateToHome"
         class="py-2 text-sm font-semibold text-neutral-300 hover:text-neutral-50"
       >
-        Menu
+        MENU
       </button>
 
       <div class="text-2xl font-bold text-center text-green-400">Vue</div>

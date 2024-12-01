@@ -3,6 +3,8 @@ import { ref } from 'vue';
 import Navbar from './components/Vue/reusables/NavBar.vue';
 import Card from './components/Vue/reusables/Card.vue';
 import HelloWorld from './components/Vue/HelloWorld.vue';
+import Chat from './components/Vue/Chat.vue';
+import PeriodicTable from './components/Vue/PeriodicTable.vue';
 
 const isModalOpen = ref(false);
 const modalContent = ref<string | null>(null);
@@ -23,13 +25,23 @@ const components = [
     description: 'Drag and Drop',
     component: HelloWorld,
   },
+  {
+    title: 'Chat UI',
+    description: 'A beautiful chat UI component',
+    component: Chat,
+  },
+  {
+    title: 'The Periodic Table',
+    description: 'A Periodic Table Component',
+    component: PeriodicTable,
+  },
 ];
 </script>
 
 <template>
   <div class="flex flex-col justify-center items-center bg-neutral-100">
     <!-- Navbar with sticky positioning -->
-    <div class="sticky top-0 z-50 p-3 w-full">
+    <div class="sticky top-0 z-50 w-full">
       <Navbar />
     </div>
 
@@ -78,7 +90,9 @@ const components = [
         </button>
 
         <!-- Render the dynamic component here -->
-        <component :is="modalContent" />
+        <div class="flex justify-center items-center">
+          <component :is="modalContent" />
+        </div>
       </div>
     </div>
   </div>
