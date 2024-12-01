@@ -4,6 +4,7 @@ import Navbar from './components/Vue/reusables/NavBar.vue';
 import Card from './components/Vue/reusables/Card.vue';
 import HelloWorld from './components/Vue/HelloWorld.vue';
 import Chat from './components/Vue/Chat.vue';
+import PeriodicTable from './components/Vue/PeriodicTable.vue';
 
 const isModalOpen = ref(false);
 const modalContent = ref<string | null>(null);
@@ -28,6 +29,11 @@ const components = [
     title: 'Chat UI',
     description: 'A beautiful chat UI component',
     component: Chat,
+  },
+  {
+    title: 'The Periodic Table',
+    description: 'A Periodic Table Component',
+    component: PeriodicTable,
   },
 ];
 </script>
