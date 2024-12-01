@@ -1,10 +1,12 @@
 <script setup lang="ts">
 import { ref } from 'vue';
+import { Info } from 'lucide-vue-next';
 
 const messages = ref<string[]>([]);
 const userInput = ref<string>('');
 const chatContainer = ref<HTMLDivElement | null>(null);
-const defaultAvatar = 'https://randomuser.me/api/portraits/men/9.jpg'; // Default avatar URL
+const defaultAvatar = 'https://randomuser.me/api/portraits/men/9.jpg';
+const headerAvatar = 'https://randomuser.me/api/portraits/women/9.jpg';
 
 const sendMessage = () => {
   const trimmedMessage = userInput.value.trim();
@@ -28,6 +30,14 @@ const nextTickScroll = () => {
   <div
     class="flex justify-center flex-col h-[500px] w-[600px] border border-gray-300 rounded-2xl overflow-hidden bg-white"
   >
+    <div class="flex items-center p-4 border-b border-gray-300 bg-neutral-100">
+      <img :src="headerAvatar" alt="Avatar" class="mr-3 w-8 h-8 rounded-full" />
+      <div class="flex-1 text-lg font-semibold">Emma Watson</div>
+      <button class="text-neutral-500 hover:text-neutral-700">
+        <Info />
+      </button>
+    </div>
+
     <div
       ref="chatContainer"
       class="flex overflow-y-auto flex-col-reverse flex-1 p-4"
