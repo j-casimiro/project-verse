@@ -4,6 +4,7 @@ import { ref } from 'vue';
 const messages = ref<string[]>([]);
 const userInput = ref<string>('');
 const chatContainer = ref<HTMLDivElement | null>(null);
+const defaultAvatar = 'https://randomuser.me/api/portraits/men/9.jpg'; // Default avatar URL
 
 const sendMessage = () => {
   const trimmedMessage = userInput.value.trim();
@@ -42,7 +43,7 @@ const nextTickScroll = () => {
           {{ message }}
         </div>
         <img
-          src="https://randomuser.me/api/portraits/men/9.jpg"
+          :src="defaultAvatar"
           alt="User Avatar"
           class="w-8 h-8 rounded-full"
         />
