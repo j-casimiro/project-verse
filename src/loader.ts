@@ -8,3 +8,7 @@ vueButton.addEventListener('click', () => {
 reactButton.addEventListener('click', () => {
   window.location.href = '/html/react.html';
 });
+
+window.addEventListener('popstate', () => {
+  window.location.reload();
+});
